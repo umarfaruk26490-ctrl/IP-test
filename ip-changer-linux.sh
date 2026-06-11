@@ -89,7 +89,7 @@ EOF
 done
 
 while true; do
-    echo -e "${YELLOW}AnonymousPro to change IP...${RESET}"
+    echo -e "${YELLOW} NetOps academy to change IP...${RESET}"
     for ctrl_port in "${CONTROL_PORTS[@]}"; do
         echo -e "AUTHENTICATE \"\"\r\nSIGNAL NEWNYM\r\nQUIT" | nc 127.0.0.1 $ctrl_port > /dev/null 2>&1
     done
